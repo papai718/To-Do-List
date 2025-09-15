@@ -1,19 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 export const Footer = () => {
-  let footerStyle = {
-    position: "absolute",
-    top: "100vh",
-    width: "100%"
-  } 
-  return (
-    <footer className="bg-dark text-light py-3" style=
-    {footerStyle}>
-      <p className="text-center">
-          CopyRight &copy; MytodosList.com
-      </p>
-    </footer>
-  )
-}
+  const footerStyle = {
+    marginTop: "auto",
+    width: "100%",
+    backgroundColor: "#212529",
+    color: "white",
+    textAlign: "center",
+    padding: "10px 0"
+  };
 
-export default Footer
+  return (
+    <footer style={footerStyle}>
+      <p>CopyRight &copy; MytodosList.com</p>
+    </footer>
+  );
+};
+
+export default Footer;
